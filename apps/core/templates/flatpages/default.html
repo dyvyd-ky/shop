@@ -55,68 +55,13 @@
 	  </nav>
 	</header>
 
-
-
-          {% if messages %}
-              {% for message in messages %}
-                <div class="alert alert-{{ message.tags }}">
-                  {{ message }}
-              {% endfor %}
-                </div>
-
-          {% endif %}
       
-          {% block content %}
-            
-          {% endblock %}
-            <div class="container-fluid col-md-8 mt-5">
-              {% if is_paginated %} {% if page_obj.has_previous %} <a class="btn btn-outline-success mb-4" href="?page=1">First</a>
-              <a class="btn btn-outline-success mb-4" href="?page={{ page_obj.previous_page_number }}">Previous</a> {% endif %}
-              {% for num in page_obj.paginator.page_range %} {% if page_obj.number == num %} <a class="btn btn-success mb-4"
-                href="?page={{ num }}">{{ num }}</a> {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %} <a
-                class="btn btn-outline-success mb-4" href="?page={{ num }}">{{ num }}</a> {% endif %} {% endfor %}
-              {% if page_obj.next %} <a class="btn btn-outline-success mb-4" href="?page={{ page_obj.next_page_number }}">Next</a>
-              <a class="btn btn-outline-success mb-4" href="?page={{ page_obj.paginator.num_pages }}">Last</a> {% endif %} {% endif %}
-            </div>
-        
-            
-          </div>
-
-
-
+    <div class="container col-md-8 mt-5">
+        {{ flatpage.content }}
+      </div>
 
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted pt-2">
-  <!-- Section: Social media 
-  <section
-    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-  >
-    Left 
-    <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
-    </div>
-     Left 
-
-     Right 
-    <div>
-      <a href="" class="me-4 text-reset">
-        <i class="fa fa-facebook-f">&nbsp</i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fa fa-twitter">&nbsp</i>
-      </a>
-
-      <a href="" class="me-4 text-reset">
-        <i class="fa fa-instagram">&nbsp</i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fa fa-linkedin"></i>
-      </a>
-
-    </div>
-    Right
-  </section>
-  <Section: Social media -->
 
   <!-- Section: Links  -->
   <section class="bg-custom pt-2">
@@ -131,8 +76,8 @@
           </h6>
           <p>
             Elytte is an online platform that enables quick and secure trading.
-            To sell physical products on our platform, get in touch via the email provided,
-            or call
+            To sell physical products on our platform, get in touch via the provided email
+            and/or call.
   
           </p>
         </div>
@@ -146,7 +91,7 @@
             Useful links
           </h6>
           <p>
-            <a href="/policy/" class="text-reset">Privacy Policy</a>
+            <a href="/privacy/" class="text-reset">Privacy Policy</a>
           </p>
           <p>
             <a href="/terms/" class="text-reset">Terms and Conditions</a>
@@ -162,12 +107,13 @@
           <h6 class="text-uppercase fw-bold mb-4">
             Contact
           </h6>
-          <p></i> Nairobi, KENYA</p>
+          <p><i class="fas fa-home me-3"></i> Nairobi, KENYA</p>
           <p>
+            <i class="fas fa-envelope me-3"></i>
             elytte.ky@gmail.com
           </p>
-          <p>+ 254 727 924 948</p>
-          <p>+ 254 779 076 450</p>
+          <p><i class="fas fa-phone me-3"></i> + 254 727 924 948</p>
+          <p><i class="fas fa-print me-3"></i> + 254 779 076 450</p>
         </div>
         <!-- Grid column -->
       </div>

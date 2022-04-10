@@ -68,7 +68,7 @@ p {
 }
 
 .navbar-light {
-    background-color: #f2f2f2;
+    background-color: #e2eeea;;
 }
 
 .form-control-xxx {
@@ -157,6 +157,9 @@ p {
    
 }
 
+.bg-custom {
+    background-color: #f4f4f4;
+}
 
 
 .box-element{
