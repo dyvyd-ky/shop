@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'apps.order',
     'apps.product',
     'apps.vendor',
+    'storages',
     'crispy_forms',
     'django.contrib.flatpages',
     'apps.users',
@@ -163,11 +164,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+#STATIC_URL = '/static/'
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
-MEDIA_URL = '/media/'
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+#MEDIA_URL = '/media/'
 
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 CKEDITOR_CONFIGS = {
@@ -179,3 +180,18 @@ CKEDITOR_CONFIGS = {
             ]),
     },
 }
+
+AWS_ACCESS_KEY_ID = 'K6TS6IPMD2DX2EY23AE7'
+AWS_SECRET_ACCESS_KEY = 'R25+FPQX+X+EKSjeSfNRlDff0THAA5BwItKT69TrbUk'
+AWS_STORAGE_BUCKET_NAME = 'elytte'
+AWS_S3_ENDPOINT_URL = 'https://cloud.digitalocean.com/spaces/elytte?i=9e5e27'
+AWS_S3_OBJECT_PARAMETERS = {
+    'CacheControl': 'max-age=86400',
+}
+AWS_LOCATION = 'elyttemedia'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+STATIC_URL = 'https://%s/%s/' % (AWS_S3_ENDPOINT_URL, AWS_LOCATION)
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
