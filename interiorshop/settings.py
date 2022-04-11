@@ -181,14 +181,14 @@ CKEDITOR_CONFIGS = {
     },
 }
 
-AWS_ACCESS_KEY_ID = 'K6TS6IPMD2DX2EY23AE7'
-AWS_SECRET_ACCESS_KEY = 'R25+FPQX+X+EKSjeSfNRlDff0THAA5BwItKT69TrbUk'
-AWS_STORAGE_BUCKET_NAME = 'elytte'
-AWS_S3_ENDPOINT_URL = 'https://cloud.digitalocean.com/spaces/elytte?i=9e5e27'
+AWS_ACCESS_KEY_ID = 'YCEGVUFDQJHYFD5PNG6U'
+AWS_SECRET_ACCESS_KEY = 'weQL99S7RvC068tek9cakFGossTrvpbft6MUoPag3NQ'
+AWS_STORAGE_BUCKET_NAME = 'elyttespace'
+AWS_S3_ENDPOINT_URL = 'https://cloud.digitalocean.com/spaces/elyttespace?i=9e5e27'
 AWS_S3_OBJECT_PARAMETERS = {
     'CacheControl': 'max-age=86400',
 }
-AWS_LOCATION = 'elyttemedia'
+AWS_LOCATION = 'elyttespace'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
