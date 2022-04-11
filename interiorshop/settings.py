@@ -184,11 +184,11 @@ CKEDITOR_CONFIGS = {
 AWS_ACCESS_KEY_ID = 'YCEGVUFDQJHYFD5PNG6U'
 AWS_SECRET_ACCESS_KEY = 'weQL99S7RvC068tek9cakFGossTrvpbft6MUoPag3NQ'
 AWS_STORAGE_BUCKET_NAME = 'elyttespace'
-AWS_S3_ENDPOINT_URL = 'https://elyttespace.nyc3.digitaloceanspaces.com'
+AWS_S3_ENDPOINT_URL = 'nyc3.digitaloceanspaces.com'
 AWS_S3_OBJECT_PARAMETERS = {
     'CacheControl': 'max-age=86400',
 }
-AWS_LOCATION = 'elyttespace'
+AWS_LOCATION = 'https://elyttespace.nyc3.digitaloceanspaces.com'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
