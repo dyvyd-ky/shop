@@ -184,7 +184,7 @@ CKEDITOR_CONFIGS = {
 AWS_ACCESS_KEY_ID = '3ESEKXZHUYTAO6UAJO24'
 AWS_SECRET_ACCESS_KEY = 'lVo16koB05oYrjrECU/NqfCnBWSIJcL1Per3mpBDti8'
 AWS_STORAGE_BUCKET_NAME = 'elyttes'
-AWS_S3_ENDPOINT_URL = 'https://elyttes.nyc3.digitaloceanspaces.com'
+AWS_S3_ENDPOINT_URL = 'https://nyc3.digitaloceanspaces.com'
 AWS_S3_OBJECT_PARAMETERS = {
     'CacheControl': 'max-age=86400',
 }
