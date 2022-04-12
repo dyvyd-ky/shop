@@ -181,21 +181,26 @@ CKEDITOR_CONFIGS = {
     },
 }
 
-AWS_ACCESS_KEY_ID = 'BSWG55TEYTNNY6AJVH77'
-AWS_SECRET_ACCESS_KEY = '6rInzjs3dIv3LJnIjNwgi3wWVoPOzRj4N4iLH/oXzMk'
-AWS_STORAGE_BUCKET_NAME = 'elytteniche'
-AWS_S3_ENDPOINT_URL = 'https://elytteniche.sgp1.digitaloceanspaces.com/'
+AWS_ACCESS_KEY_ID = 'WQH4YC7IYEETWQVZ2JLE'
+AWS_SECRET_ACCESS_KEY = 'FcvcF3DTImaoGws/Hp5uVuyxaFZ/42qaqw6bZkCtBNU'
+
+AWS_STORAGE_BUCKET_NAME = 'elytteq'
+AWS_S3_ENDPOINT_URL = 'https://elytteq.sgp1.digitaloceanspaces.com'
+AWS_S3_CUSTOM_DOMAIN = 'https://spaces.elytte.com'
 AWS_S3_OBJECT_PARAMETERS = {
     'CacheControl': 'max-age=86400',
 }
 
 AWS_DEFAULT_ACL = 'public-read'
 
-AWS_LOCATION = 'niche'
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static/'),
-]
-STATIC_URL = 'https://%s/%s/' % (AWS_S3_ENDPOINT_URL, AWS_LOCATION)
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+
+
+# Use AWS_S3_ENDPOINT_URL here if you haven't enabled the CDN and got a custom domain. 
+STATIC_URL = '{}/{}/'.format(AWS_S3_CUSTOM_DOMAIN, 'static')
+STATIC_ROOT = 'static/'
+
+MEDIA_URL = '{}/{}/'.format(AWS_S3_CUSTOM_DOMAIN, 'media')
+MEDIA_ROOT = 'media/'
