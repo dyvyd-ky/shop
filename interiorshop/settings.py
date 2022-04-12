@@ -167,8 +167,8 @@ USE_TZ = True
 #STATIC_URL = '/static/'
 #STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
-MEDIA_URL = '/media/'
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+#MEDIA_URL = '/media/'
 
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 CKEDITOR_CONFIGS = {
@@ -181,17 +181,21 @@ CKEDITOR_CONFIGS = {
     },
 }
 
-AWS_ACCESS_KEY_ID = 'EWXHRDHJYIZ4KVSBTCY2'
-AWS_SECRET_ACCESS_KEY = 'nLK7Cuwumoo9dWNJIDc2zIQSxnIniyC+oL0aIaj6Mbw'
-AWS_STORAGE_BUCKET_NAME = 'elyttespes'
-AWS_S3_ENDPOINT_URL = 'https://elyttespes.sgp1.digitaloceanspaces.com'
+AWS_ACCESS_KEY_ID = 'BSWG55TEYTNNY6AJVH77'
+AWS_SECRET_ACCESS_KEY = '6rInzjs3dIv3LJnIjNwgi3wWVoPOzRj4N4iLH/oXzMk'
+AWS_STORAGE_BUCKET_NAME = 'elytteniche'
+AWS_S3_ENDPOINT_URL = 'elytteniche.sgp1.digitaloceanspaces.com'
 AWS_S3_OBJECT_PARAMETERS = {
     'CacheControl': 'max-age=86400',
 }
-AWS_LOCATION = 'elyttespes'
+
+AWS_DEFAULT_ACL = 'public-read'
+
+AWS_LOCATION = 'niche'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static/'),
 ]
 STATIC_URL = 'https://%s/%s/' % (AWS_S3_ENDPOINT_URL, AWS_LOCATION)
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
