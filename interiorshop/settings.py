@@ -192,15 +192,17 @@ AWS_S3_OBJECT_PARAMETERS = {
 }
 
 AWS_DEFAULT_ACL = 'public-read'
+AWS_LOCATION = 'elytteq'
 
+STATIC_URL = 'https://%s/%s/' % (AWS_S3_ENDPOINT_URL, AWS_LOCATION)
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 
 
 # Use AWS_S3_ENDPOINT_URL here if you haven't enabled the CDN and got a custom domain. 
-STATIC_URL = '{}/{}/'.format(AWS_S3_CUSTOM_DOMAIN, 'static')
-STATIC_ROOT = 'static/'
+#STATIC_URL = '{}/{}/'.format(AWS_S3_CUSTOM_DOMAIN, 'static')
+#STATIC_ROOT = 'static/'
 
-MEDIA_URL = '{}/{}/'.format(AWS_S3_CUSTOM_DOMAIN, 'media')
-MEDIA_ROOT = 'media/'
+#MEDIA_URL = '{}/{}/'.format(AWS_S3_CUSTOM_DOMAIN, 'media')
+#MEDIA_ROOT = 'media/'
