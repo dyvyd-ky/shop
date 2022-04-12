@@ -185,7 +185,7 @@ AWS_ACCESS_KEY_ID = 'WQH4YC7IYEETWQVZ2JLE'
 AWS_SECRET_ACCESS_KEY = 'FcvcF3DTImaoGws/Hp5uVuyxaFZ/42qaqw6bZkCtBNU'
 
 AWS_STORAGE_BUCKET_NAME = 'elytteq'
-AWS_S3_ENDPOINT_URL = 'https://elytteq.sgp1.digitaloceanspaces.com/elytte'
+AWS_S3_ENDPOINT_URL = 'https://elytteq.sgp1.digitaloceanspaces.com'
 AWS_S3_CUSTOM_DOMAIN = 'https://spaces.elytte.com'
 AWS_S3_OBJECT_PARAMETERS = {
     'CacheControl': 'max-age=86400',
