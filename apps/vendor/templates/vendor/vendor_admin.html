@@ -4,7 +4,7 @@
 
 {% block content %}
 <div class="container shadow py-3">
-    <div class="container card py-3"> 
+    <div class="container card bg-light py-3"> 
         <span>     
             <h4>Admin:-  {{ vendor.business_name }}
                 <a href="{% url 'logout' %}" class="btn btn-outline-danger float-right ml-2">Log out</a>
@@ -19,7 +19,7 @@
               
     </div>
  
-    <div class="container card py-3 mt-3">
+    <div class="container card py-3 mt-3 bg-light">
         <h4>My products
             <a href="{% url 'add_product' %}" class="btn btn-outline-info float-right">Add product</a>
         </h4>        
