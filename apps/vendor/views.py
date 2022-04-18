@@ -83,12 +83,12 @@ def edit_product(request, pk):
             productimage.product = product
             productimage.save()
 
-            return redirect('product')
+            return redirect('vendor_admin')
 
         if form.is_valid():
             form.save()
 
-            return redirect('product')
+            return redirect('vendor_admin')
     else:
         form = ProductForm(instance=product)
         image_form = ProductImageForm()
