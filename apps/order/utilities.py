@@ -25,7 +25,7 @@ def notify_vendor(order):
         message = Mail(
             from_email = settings.DEFAULT_EMAIL_FROM,
             to_emails = vendor.email,
-            subject='You have a new order!  Kindly request for the Mpesa Confirmation Code upon delivery for payment processin.',
+            subject='You have a new order!  Kindly request for the Mpesa Confirmation Code upon delivery for payment processing.',
             html_content = render_to_string('order/email_notify_vendor.html', {'order': order, 'vendor': vendor}))
         try:
             sg = SendGridAPIClient(settings.SENDGRID_API_KEY)

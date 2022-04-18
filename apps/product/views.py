@@ -45,7 +45,7 @@ def product(request, category_slug, product_slug):
 
             cart.add(product_id=product.id, quantity=quantity, update_quantity=False)
 
-            messages.success(request, 'The product was added to the cart')
+            messages.success(request, 'The product was added to the basket')
 
             return redirect('product', category_slug=category_slug, product_slug=product_slug)
     else:
