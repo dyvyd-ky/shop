@@ -1,5 +1,5 @@
 body {
-    background-color: #f9f9f9f0!important;
+    background-color: #f9f9f9f0;
 }
 
 .shadow {
@@ -68,7 +68,7 @@ p {
 }
 
 .navbar-light {
-    background-color: #e2eeea;;
+    background-color: #f3f3f3;
 }
 
 .form-control-xxx {
@@ -77,7 +77,7 @@ p {
 }
 
 .form-control-xxxx {
-    width:50px;
+    width:0px;
     display: inline;
 }
 
