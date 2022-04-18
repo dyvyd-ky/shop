@@ -24,7 +24,7 @@ def notify_vendor(order):
     for vendor in order.vendors.all():
         message = Mail(
             from_email = settings.DEFAULT_EMAIL_FROM,
-            to_emails = [vendor.email, 'elytte.ky@gmail.com']
+            to_emails = vendor.email, 
             subject='You have a new order!  Kindly request for the Mpesa Confirmation Code upon delivery for payment processing.',
             html_content = render_to_string('order/email_notify_vendor.html', {'order': order, 'vendor': vendor}))
         try:
