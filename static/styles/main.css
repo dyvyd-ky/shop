@@ -35,8 +35,8 @@ h3,
 h4,
 h5,
 h6 {
-	color: #007a6a;
-    /*color: #006a5c;
+	/*color: #007a6a;*/
+    color: #00574b;
     /*color: rgb(27, 134, 0);*/
     
 }
@@ -108,7 +108,7 @@ p {
 
 
 .badge-info {
-    background-color: #009e89;
+    background-color: #00719e;
 
 }
 
