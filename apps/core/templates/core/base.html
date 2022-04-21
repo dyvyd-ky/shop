@@ -38,12 +38,12 @@
               <a class="nav-item nav-link" href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
             </div>
            
-            <div class="mx-auto"><p class="font-italic mt-2"><small>Life iko order</small></p></div>
+            <div class="mx-auto"><p class="font-italic mt-3"><small>Life iko order</small></p></div>
           
             <div class="navbar-nav">
               {% if user.is_authenticated %}
                 
-                  <p class="nav-item my-auto mx-3">                        
+                  <p class="nav-item my-auto mr-3">                        
                   {{ user.username }}
                 </p> 
                 <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
