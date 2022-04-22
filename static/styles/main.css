@@ -107,13 +107,8 @@ p {
 }
 
 
-.badge-info {
-    background-color: #007a6a;
-
-}
-
-.font-italic {
-    color: chartreuse;
+.font-italic a {
+    color: rgb(128, 255, 0);
 }
 
 .heading h3 {
