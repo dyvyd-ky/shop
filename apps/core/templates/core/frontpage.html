@@ -35,7 +35,7 @@
                 {% endif %}
                 </li>
                 <li class="nav-item right">
-                    <a href="{% url 'cart' %}" class="btn btn-info">BASKET<span class="badge badge-light">{% if cart %}{{ cart|length }}{% endif %}</span></a>
+                    <a href="{% url 'cart' %}" class="btn btn-info">BASKET <span class="badge badge-light">{% if cart %}{{ cart|length }}{% endif %}</span></a>
                 </li>
               </ul>
               <form method='get' action="{% url 'search' %}">
