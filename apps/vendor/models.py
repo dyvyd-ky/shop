@@ -1,6 +1,4 @@
 from email.policy import default
-from importlib.abc import Traversable
-from turtle import Turtle
 from django.contrib.auth.models import User
 from django.db import models
 
