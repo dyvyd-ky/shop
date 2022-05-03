@@ -6,17 +6,17 @@
   
             
             
-                <div class="container shadow py-3">
+                <div class="container py-3">
                     
-                    <div class="card-body shadow">
+                    <div class="card-body">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-5">
                                 {% if product.image %}
                                 <img class="img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 {% endif %}
                             </div>
                             
-                            <div class="col-md-5">    
+                            <div class="col-md-4">    
                                     <h3 class="font-weight-light">{{ product.title }}</h3>
                                     <h6 class="text-black">
                                         KSh {{ product.price }}                                  
