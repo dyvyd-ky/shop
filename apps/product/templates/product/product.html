@@ -38,17 +38,11 @@
                                 <div class="card card-body bg-light">
                                     <a href="{% url 'vendor' product.vendor.id %}"> 
                                                     
-                                        <img class="img-fluid rounded profile" src="{{product.vendor.profile_pic.url}}">
+                                        <img class="img-fluid rounded" src="{{product.vendor.profile_pic.url}}">
                                         <h6 class="font-weight-bold float-right mt-3">{{ product.vendor.business_name }}'s Store <br>
                                         View Here </h6>
-
-                                     
                                     </a>
-                                    <hr>
-                                    <p><i class="fa fa-instagram mr-2"></i><a href="{{ vendor.instagram_url }}" target="_blank" rel="noreferrer noopener">Instagram</a></p>
-                                    <p><i class="fa fa-twitter mr-2"></i><a href="{{ vendor.twitter_url }}" target="_blank" rel="noreferrer noopener">Twitter</a></p>
-                                    <p><i class="fa fa-facebook mr-2"></i><a href="{{ vendor.facebook_url }}" target="_blank" rel="noreferrer noopener">Facebook</a></p>
-                            
+                                 
                                 </div>   
                             </div>     
                         </div>

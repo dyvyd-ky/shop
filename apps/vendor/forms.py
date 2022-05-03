@@ -16,4 +16,4 @@ class ProductImageForm(ModelForm):
 class VendorForm(ModelForm):
     class Meta:
         model = Vendor
-        fields = ['business_name', 'profile_pic', 'email', 'about', 'instagram_url', 'twitter_url', 'facebook_url', 'phone_number', 'created_by']
+        fields = ['business_name', 'created_by', 'profile_pic', 'email', 'about', 'instagram_url', 'twitter_url', 'facebook_url', 'phone_number']
