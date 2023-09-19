@@ -10,15 +10,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'tuxik&w(xnck86#t!asbp67u$##glq!#08y35%2kxrt!-3i%0n'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
 ALLOWED_HOSTS = ['128.199.222.115', 'elytte.com', 'www.elytte.com']
 
-STRIPE_PUB_KEY = 'pk_test_51HIHiuKBJV2qfWbD2gQe6aqanfw6Eyul5P02KeOuSR1UMuaV4TxEtaQyzr9DbLITSZweL7XjK3p74swcGYrE2qEX00Hz7GmhMI'
-STRIPE_SECRET_KEY = 'sk_test_51HIHiuKBJV2qfWbD4I9pAODack7r7r9LJOY65zSFx7jUUwgy2nfKEgQGvorv1p2xP7tgMsJ5N9EW7K1lBdPnFnyK00kdrS27cj'
+STRIPE_PUB_KEY = ''
+STRIPE_SECRET_KEY = ''
 
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'vendor_admin'
@@ -27,7 +27,7 @@ LOGOUT_REDIRECT_URL = 'frontpage'
 SESSION_COOKIE_AGE = 86400
 CART_SESSION_ID = 'cart'
 
-SENDGRID_API_KEY='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'
+SENDGRID_API_KEY=''
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'elytte'
 DEFAULT_EMAIL_FROM = 'elytte.ky@gmail.com'
@@ -113,7 +113,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'elytte',
         'USER': 'elytte',
-        'PASSWORD': 'JmKy1920GG9181995j',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -181,8 +181,8 @@ CKEDITOR_CONFIGS = {
     },
 }
 
-AWS_ACCESS_KEY_ID = '4OA4PHKRAQH2LQ4KHG7I'
-AWS_SECRET_ACCESS_KEY = 'LjbKr8NajlS1LJ7o6XrrAb1tr7mLYrqOMcyaxJcXVw8'
+AWS_ACCESS_KEY_ID = ''
+AWS_SECRET_ACCESS_KEY = ''
 
 AWS_STORAGE_BUCKET_NAME = 'elytteky'
 AWS_S3_ENDPOINT_URL = 'https://elytteky.sgp1.digitaloceanspaces.com'
